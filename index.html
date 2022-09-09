@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Алексей Шадрин - frontend developer"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Алексей Шадрин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/queries.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link page-link" href="#about">Обо мне</a></li>
+            <li><a class="main-nav-link page-link" href="#projects">Мои проекты</a></li>
+        </ul>
+        <ul class="nav-btns">
+            <!--            <li>-->
+            <!--                <a-->
+            <!--                        class="main-nav-link nav-icon"-->
+            <!--                        href="https://www.linkedin.com/in/aleksey-shadrin-492bba246/"-->
+            <!--                        target="_blank"-->
+            <!--                >-->
+            <!--                    <img src="img/logos/linked-in-icon.png" alt="LinkedIn logo"/>-->
+            <!--                </a>-->
+            <!--            </li>-->
+            <li><a class="main-nav-link nav-icon"
+                   href="https://t.me/AlexeyWebDevRU"
+                   target="_blank"
+            ><img
+                    src="img/logos/telegram-icon.png"
+                    alt="Telegram logo"
+            /></a></li>
+            <li><a class="main-nav-link nav-icon"
+                   href="https://github.com/AlexRay-dev"
+                   target="_blank"
+            ><img
+                    src="img/logos/github.png"
+                    alt="Github logo"
+            /></a></li>
+        </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+</header>
+<main>
+    <section class="section-hero" id="about">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">Шадрин Алексей,<br>Frontend Developer</h1>
+                <p class="hero-description">Я увлечен созданием интерактивных, красивых и простых в использовании
+                    веб-приложений. Люблю изучать новые технологии и сразу же применять эти знания на практике. Мой
+                    любимый технический стек на данный момент включает: <span>JavaScript, React, Redux, Typescript и Material UI.</span>
+                </p>
+                <a href="https://drive.google.com/file/d/1b93yc6uHzW3MPWeUQEYxQnU0l_gEAHRQ/view?usp=sharing"
+                   target="_blank"
+                   class="btn btn--full">Резюме</a>
+            </div>
+            <picture class="hero-img-box">
+                <img
+                        src="img/hero-min.jpg"
+                        class="hero-img"
+                        alt="man's photo"
+                />
+            </picture>
+        </div>
+    </section>
+
+
+    <section class="section-projects" id="projects">
+        <div class="container center-text">
+            <h2 class="heading-secondary">
+                JavaScript / React
+            </h2>
+        </div>
+        <div class="container grid grid--3-cols">
+
+            <div class="project">
+                <div class="project-img-box">
+                    <a href="https://game-catalog-nu.vercel.app/" target="_blank">
+                        <picture>
+                            <source srcset="img/projects/game-catalog-nu.vercel.app_.png" type="image/jpg"/>
+                            <img
+                                    src="img/projects/weather.png"
+                                    class="project-img"
+                                    alt="weather-app-snapshot"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p class="project-title">Game-Catalog</p>
+                    <ul class="project-techs">
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Next</span>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>React</span></li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>REST API</span></li>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Adaptive</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://game-catalog-nu.vercel.app/" target="_blank"
+                       class="btn btn--full btn--project">Open</a>
+                    <a href="https://github.com/AlexRay-dev/GameCatalog" target="_blank"
+                       class="btn--project btn--outline">
+                        <img
+                                src="img/logos/github.png"
+                                class="git-logo"
+                                alt="github-logo"
+                        >
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-img-box">
+                    <a href="https://kinopoisk-two.vercel.app/"
+                       target="_blank">
+                        <picture>
+                            <source srcset="img/projects/movies.png" type="image/jpg"/>
+                            <img
+                                    src="img/projects/movies.png"
+                                    class="project-img"
+                                    alt="movies-app-snapshot"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p class="project-title">Cinema</p>
+                    <ul class="project-techs">
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>React</span>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Typescript</span></li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>RTK</span></li>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Material UI</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://kinopoisk-two.vercel.app/"
+                       target="_blank"
+                       class="btn btn--full btn--project">Open</a>
+                    <a href="https://github.com/AlexRay-dev/kinopoisk"
+                       target="_blank"
+                       class="btn--project btn--outline">
+                        <img
+                                src="img/logos/github.png"
+                                class="git-logo"
+                                alt="github-logo"
+                        >
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <div class="project-img-box">
+                    <a href="https://notes-ten-pi.vercel.app/" target="_blank">
+                        <picture>
+                            <img
+                                    src="img/projects/notes.png"
+                                    class="project-img"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p class="project-title">Notes</p>
+                    <ul class="project-techs">
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>React</span>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Typescript</span></li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>RTK</span></li>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Material UI</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://notes-ten-pi.vercel.app/"
+                       target="_blank"
+                       class="btn btn--full btn--project">Open</a>
+                    <a href="https://github.com/AlexRay-dev/Notes"
+                       target="_blank"
+                       class="btn--project btn--outline">
+                        <img
+                                src="img/logos/github.png"
+                                class="git-logo"
+                                alt="github-logo"
+                        >
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="section-projects" id="projects2">
+        <div class="container center-text">
+            <h2 class="heading-secondary">
+                HTML / CSS
+            </h2>
+        </div>
+        <div class="container grid grid--3-cols">
+            <!--Industrial-->
+            <div class="project">
+                <div class="project-img-box">
+                    <a href="https://alexray-dev.github.io/Industrial/"
+                       target="_blank">
+                        <picture>
+                            <img
+                                    src="img/projects/Industrial.png"
+                                    class="project-img"
+                                    alt="movies-app-snapshot"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p class="project-title">Industrial</p>
+                    <ul class="project-techs">
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>HTML/CSS</span>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>SCSS</span></li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Responsive</span></li>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Adaptive</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://alexray-dev.github.io/Industrial/"
+                       target="_blank"
+                       class="btn btn--full btn--project">Open</a>
+                    <a href="https://github.com/AlexRay-dev/Industrial"
+                       target="_blank"
+                       class="btn--project btn--outline">
+                        <img
+                                src="img/logos/github.png"
+                                class="git-logo"
+                                alt="github-logo"
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <!--Masks-->
+            <div class="project">
+                <div class="project-img-box">
+                    <a href="https://alexray-dev.github.io/Masks/"
+                       target="_blank">
+                        <picture>
+                            <img
+                                    src="img/projects/masks.png"
+                                    class="project-img"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p class="project-title">Masks</p>
+                    <ul class="project-techs">
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>HTML/CSS</span>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>SCSS</span></li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Responsive</span></li>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Adaptive</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://alexray-dev.github.io/Masks/"
+                       target="_blank"
+                       class="btn btn--full btn--project">Open</a>
+                    <a href="https://github.com/AlexRay-dev/Masks"
+                       target="_blank"
+                       class="btn--project btn--outline">
+                        <img
+                                src="img/logos/github.png"
+                                class="git-logo"
+                                alt="github-logo"
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <!--DataFort-->
+            <div class="project">
+                <div class="project-img-box">
+                    <a href="https://df.yacl.site/services/cloud/arenda-1s-v-oblake.html"
+                       target="_blank">
+                        <picture>
+                            <img
+                                    src="img/projects/datafort.png"
+                                    class="project-img"
+                                    alt="movies-app-snapshot"
+                            />
+                        </picture>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <p class="project-title">DataFort</p>
+                    <ul class="project-techs">
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>HTML/CSS</span>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>SCSS</span></li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Responsive</span></li>
+                        </li>
+                        <li class="project-tech">
+                            <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                            <span>Adaptive</span></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-links">
+                    <a href="https://df.yacl.site/services/cloud/arenda-1s-v-oblake.html"
+                       target="_blank"
+                       class="btn btn--full btn--project">Open</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+</body>
+</html>
